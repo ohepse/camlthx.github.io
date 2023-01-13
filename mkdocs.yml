@@ -46,6 +46,7 @@ nav:
         - 龟速乘 : OI_related\quick_plus.md
     - 学习笔记 :
         - 简单数论 : OI_related/simple_number_theory.md
+        - dfs 序 : OI_related/dfs_order.md
     - 杂项 :
         - 警 示 自 己 : OI_related\oi_warning.md
   - cubing :

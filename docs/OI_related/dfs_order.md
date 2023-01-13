@@ -1,3 +1,5 @@
+感觉这个也算是个知识点但是到处都没有教程捏
+
 [这里](https://loj.ac/d/1698)有一篇写的很好的关于dfs序的教程。
 
 dfs序就是把树上问题转化为序列问题，从而通过树状数组或线段树进行维护。
@@ -376,7 +378,7 @@ struct bittree{
 	}
 };
 bittree A,B;
-int st[maxn],ed[maxn],tim=0,dfn[maxn<<1],dep[maxn],fath[maxn];//dfn is used for grtting euler order(?
+int st[maxn],ed[maxn],tim=0,dfn[maxn<<1],dep[maxn],fath[maxn];//dfn is used for getting euler order(?
 void dfs(int x,int fa,int d){
 	st[x]=++tim;
 	dfn[tim]=x;
