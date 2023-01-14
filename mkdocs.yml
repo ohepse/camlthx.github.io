@@ -1,5 +1,8 @@
 site_name: Decalemaxithu's wiki
 
+repo_name : Decalemaxithu's wiki
+repo_url : https://github.com/camlthx/camlthx.github.io
+
 theme:
   name: "material"
   language: "zh"
@@ -7,6 +10,8 @@ theme:
     header.tooltips
     header.autohide
     navigation.footer
+    navigation.top
+    navigation.tabs
 
   palette:
     - scheme: default
@@ -22,7 +27,8 @@ theme:
       toggle:
         icon: material/lightbulb-outline
         name: Switch to light mode
-
+  icon :
+    repo : fontawesome/brands/git-alt
 
 
 nav:
@@ -34,6 +40,7 @@ nav:
         - P3045食堂 : OI_related\SLOJ_P3045.md
       - Luogu :
         - P3225矿场搭建 : OI_related\luoguP3225.md
+        - P2680 【NOIP2015提高】运输计划 : OI_related\luoguP2680.md
       - Codeforce :
         - CF400D Dima and Bacteria : OI_related\CF400D_Dima_and_Bacteria.md
         - CF567E President and Roads : OI_related\CF567E_President_and_Roads.md
@@ -77,6 +84,7 @@ extra:
       name: 2018MOTI02
     - icon: fontawesome/solid/paper-plane
       link: mailto:<decalemaxithu@qq.com>
+
 markdown_extensions:
   - admonition
   - def_list
