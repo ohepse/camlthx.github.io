@@ -3,11 +3,11 @@
 -----
 upd 11.18 终于开始教数论力！！！！
 -----
-# 1.数论基础
+## 1.数论基础
 
 
-# 2.质数
-## 2.1 质数的判定
+## 2.质数
+### 2.1 质数的判定
 没什么好说的，幼儿园大班的知识。
 
 什么？你说你不知道什么是质数？
@@ -15,11 +15,11 @@ upd 11.18 终于开始教数论力！！！！
 
 kdw听了都要连夜跑过来打你
 
-## 2.2 质数筛
-### 2.2.1 埃氏筛
+### 2.2 质数筛
+#### 2.2.1 埃氏筛
 也不知道 $when how$老师 怎么教的，我一直以为这个叫欧拉筛。
 
-#### 原理：
+##### 原理：
 原理很简单，就是质数的倍数一定不是质数。所以我们就可以这样子求质数。
 
 时间复杂度大概是$O(nlog(log n))$。
@@ -36,11 +36,11 @@ kdw听了都要连夜跑过来打你
    
 ~~~
 
-### 2.2.2 欧拉筛
+#### 2.2.2 欧拉筛
 
 这才是正统欧拉筛
 
-#### 2.2.2.1 原理：
+##### 2.2.2.1 原理：
 跟埃氏筛原理相似。但是埃氏筛有个问题：一个数可能被筛了很多次。欧拉筛保证了每个数只被筛一次，从而降低了时间复杂度。
 
 时间复杂度趋近于$O(n)$。
@@ -62,7 +62,7 @@ kdw听了都要连夜跑过来打你
 
 
 ~~~
-#### 2.2.2.2 欧拉筛的正确性：
+##### 2.2.2.2 欧拉筛的正确性：
 对于 if(i%a[j]==0) break; 这句话，设$i=t*a[j]$ ,如果没有$break$ 句，那么下一次循环会执行到$i*a[j+1]$,可以化成$t*a[j]*a[j+1]$ ，这个数已经是$a[j]$ 的倍数，已经被筛过了，所以应该$break$ 。这句话确保了每个数不会被筛第二遍。
 
 通过下文约数的知识我们可以知道，任意正整数$n$可以写为$n=\prod_{i = 1}^{s}pi^{ki}$ ($pi$为质数，$ki$为$pi$的个数) , 同时筛数的时候表达式为 $i*a[j]$ ,所以不用担心漏筛。
@@ -110,9 +110,9 @@ upd 2022.10.7
 
 有什么还会回来补充的
 
-# 4. 欧拉定理
-## 4.1 欧拉函数以及求法
-### 4.1.1 欧拉函数$\varphi(n)$的定义
+## 4. 欧拉定理
+### 4.1 欧拉函数以及求法
+#### 4.1.1 欧拉函数$\varphi(n)$的定义
 $\varphi(n)$ 表示小于n且与n互质的正整数的个数。
 
 数学语言表达为为 $\varphi(n)=|S|,S=$ { $m|1\leq m < n,gcd(m,n)=1$}。
@@ -122,7 +122,7 @@ $\varphi(n)$ 表示小于n且与n互质的正整数的个数。
 特别的，$\varphi(1)=1$。
 
 
-### 4.1.2 欧拉函数的性质
+#### 4.1.2 欧拉函数的性质
 1.当n为质数时，$\varphi(n)=n-1$
 
 2.欧拉函数是积性函数，但不是完全积性函数。所以当 $gcd(a,b)=1$ 时, $\varphi(ab)=\varphi(a)\varphi(b)$
@@ -151,7 +151,7 @@ int euler_phi(int n) {
 }
 ~~~
 
-#### 4.1.3.2 筛法求欧拉函数
+##### 4.1.3.2 筛法求欧拉函数
 我们可以通过欧拉筛同时求出欧拉函数值
 
 需要用到的三个性质：
@@ -186,14 +186,14 @@ void getphi(){
 }
 
 ~~~
-## 4.2 欧拉定理&费马小定理
-### 4.2.1 欧拉定理：
+### 4.2 欧拉定理&费马小定理
+#### 4.2.1 欧拉定理：
 $ a^{\varphi(n)} \equiv 1 \pmod n $ ,满足 $gcd(a,n)=1$ 
 
-### 4.2.2 费马小定理
+#### 4.2.2 费马小定理
 特别地，在$n$为素数的时候满足 $a^{n-1} \equiv 1 \pmod n$,为费马小定理
 
-### 4.2.3 扩展欧拉定理
+#### 4.2.3 扩展欧拉定理
 用来解决 $ a^b $ % $m $ 过大的问题，进行降幂操作
 
 $$
@@ -270,21 +270,21 @@ int main(){
 ```
 但是听说用展开式求 $\varphi$ 在加个记搜比线性筛更快。
 
-# 5.欧几里得
-## 5.1 欧几里得算法
+## 5.欧几里得
+### 5.1 欧几里得算法
 主要用于求解两个数$a$和$b$的最大公约数,我们不妨设$(a>b)$,其公式为$gcd(a,b)=gcd(b,a \text{ mod } b)=gcd(a \text{ mod } b,b \text{ mod } (a \text{ mod } b))= \ldots =gcd(x,0)$,这里的$x$即为最大公约数
 
 可用于求上文 约数 章节所提到的 $gcd$ 和 $lcm$ 
 
 注意：欧几里得算法的一点要求是$a>b$
 
-## 5.2裴蜀定理
+### 5.2裴蜀定理
 又称贝祖定理。
 
 **定义**：对于整数$a$和$b$以及它们的$gcd(a,b)=d$ ,可以得出存在任意的整数$x$和$y$,使得$ax+by=m$, $m$一定是d的整数倍，且存在$ax+by=d$。当$gcd(a,b)=1$时，存在唯一的一组 $ax+by=1$。
 
 不想写证明了。
-## 5.3扩展欧几里得算法（扩欧）
+### 5.3扩展欧几里得算法（扩欧）
 应用1：此算法用来求解 $ax+by=gcd(a,b)$ 的一组可行解。
 
 根据裴蜀定理，该方程一定有解。
@@ -352,6 +352,198 @@ $ax_2+by_2=c$
 其中 $x_0$ 是任意解
 
 
-# 6.逆元
-## 6.1 逆元的定义
-即 $ax \equiv 1 (\text{ mod } b)$ 的一组解
+## 6.逆元
+### 6.1 逆元的定义
+即线性同余方程 $ax \equiv 1 (\text{ mod } b)$ 的一组解，称 $x$ 为 $a \mod b$  的逆元，记作 $a^{-1}$ 。
+
+### 6.2 逆元的计算
+
+**方法1：**
+
+对于线性同余方程 $ax \equiv 1 (\text{ mod } b)$ 
+
+我们可以转化为 $ax-1=b*(-y)$ 
+
+移项得 $ax+by=1$ ，即可用扩欧求解。
+
+**方法二：**
+
+根据费马小定理，原方程可以转化为 $ax \equiv a^{b-1}(\mod b)$
+
+得 $x=a^{b-2}(\mod b)$
+
+于是可以用快速幂求解，但需要保证 $b$ 是一个质数。
+
+**方法三：** 线性递推求逆元
+
+很明显，1的逆元为1
+
+对于 $p$ 的逆元 $p^{-1}$ ，设 $p=i*k+j$ ，其中 $0\leq i<p,j<i$ 。
+
+那么转化为同余形式，就有 $i*k+j \equiv 0 (mod\text{ } p)$，
+
+两边同乘 $i^{-1}*j^{-1}$ ，得 $k*j^{-1}+i^{-1}=0 (mod \text{ }p)$
+
+移项，得 $i^{-1} \equiv -k*j^{-1} (mod \text{ }p)$
+
+因为 $k=\lfloor \frac{p}{i} \rfloor$ ，所以 $i^{-1} \equiv -\lfloor \frac{p}{i} \rfloor*j^{-1} (mod \text{ }p)$
+
+**代码：**
+
+```cpp
+inv[1]=1;
+for(int i=2;i<=n;i++){
+	inv[i]=(-p/i*inv[p%i]%p+p)%p;
+}
+```
+
+### 逆元的使用
+
+逆元的一个重要用途是用于除法的取模。即 $a/b \mod p$ 当 $a$ 和 $b$ 过大时，容易导致溢出导致取模出错。
+
+可以将其转化为 $a*b^{-1} \mod p$ 进行计算。
+
+## 7.同余方程组
+
+即求以下同余方程组的解
+
+
+$$
+y=
+\begin{cases}
+x \equiv a_1 \text{ }(mod \text{ }m_1)\\
+x \equiv a_2 \text{ }(mod \text{ }m_2)\\
+x \equiv a_3 \text{ }(mod \text{ }m_3)\\
+\dots\\
+x \equiv a_r \text{ }(mod \text{ }m_r)
+
+\end{cases}
+$$
+
+### 7.1 中国剩余定理（CRT）
+
+设$m_1,m_2,\dots,m_i$ 是两两互质的正整数，则同余方程有整数解，且模 $M=m_1*m_2*\dots*m_r$唯一，解为 $x \equiv \sum_{i=1}^ra_iM_iM_i^{-1}\text{ }(mod \text{ }M)$ ，其中 $M_i=M/m_i$，$M_i^{-1}$ 为 $M_i$ 模 $m_i$ 的逆元。
+
+~~因为这玩意实在太难证就不证了吧，就当结论背好了~~
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+ll exgcd(ll a,ll b,ll &x,ll &y){
+	if(!b){
+		x=1;y=0;
+		return a;
+	}
+	ll d=exgcd(b,a%b,x,y);
+	ll temp=x;
+	x=y;
+	y=temp-a/b*y;
+	return d;
+}
+ll n,a[15],m[15],M=1,ans=0,mi,mi_1;
+int main(){
+	cin>>n;
+	for(int i=1;i<=n;i++){
+		cin>>m[i]>>a[i];
+		M*=m[i];
+	}
+	for(int i=1;i<=n;i++){
+		ll x,y;
+		mi=M/m[i];
+		ll d=exgcd(mi,m[i],mi_1,y);
+		ans=(ans+a[i]*mi*mi_1)%M;
+	}
+	if(ans<0) ans+=M;
+	cout<<ans<<"\n";
+	return 0;
+}
+```
+
+
+
+ ### 7.2 扩展中国剩余定理（EXCRT）
+
+又叫迭代法。
+
+顾名思义，每次合并两个同余式。
+
+**计算推导：**
+$$
+\begin{cases}
+x \equiv a_1 \text{ }(mod \text{ }m_1)\\
+x \equiv a_2 \text{ }(mod \text{ }m_2)\\
+\end{cases}
+$$
+
+$$
+\begin{cases}
+x = a_1+k_1m_1(1)\\
+x = a_2+k_2m_2(2)\\
+\end{cases}
+$$
+
+$$
+(1)-(2):k_1m_1-k_2m_2=a_2-a_1(3)
+$$
+
+$(3)$ 式可以用扩欧求出 $k_1$,同时判断是否有解，将 $k_1$ 带入$(1)$ ，得出 $x'=a_1+k_1m_1$
+
+可以得出，方程组的通解为 $x=x'+k*lcm(m_1,m_2)$ ，$x \equiv x'\text{ } (mod \text{ }p)$。
+
+再以此方式迭代即可。
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+ll exgcd(ll a,ll b,ll &x,ll &y){
+	if(!b){
+		x=1;y=0;
+		return a;
+	}
+	ll d=exgcd(b,a%b,x,y),temp;
+	temp=x;
+	x=y;
+	y=temp-a/b*y;
+	return d;
+}
+ll mul(ll a,ll b,ll mod){
+	ll res=0;
+	while(b){
+		if(b&1) res=(res+a)%mod;
+		a=(a+a)%mod;
+		b>>=1;
+	}
+	return res;
+}
+ll k,n,a,b,d,lcm,now,x,y;
+bool flag;
+int main(){
+	while(cin>>n){
+		cin>>a>>b;
+		lcm=a;now=b;
+		flag=false;
+		for(int i=1;i<n;i++){
+			cin>>a>>b;
+			b=(b-now%a+a)%a;
+			d=exgcd(lcm,a,x,y); 
+			if(b%d){
+				flag=true;
+				break;
+			}
+			k=mul(x,b/d,a);
+			now+=lcm*k;
+			lcm=lcm/d*a;
+			now=(now%lcm+lcm)%lcm;
+		}
+		if(flag) cout<<"-1\n";
+		else cout<<now<<"\n";
+	}
+	return 0;
+}
+```
+
+## 8 结语
+
+2023.1.15 终于更完这个史前巨坑了。纪念。

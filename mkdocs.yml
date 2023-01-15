@@ -29,6 +29,20 @@ theme:
         name: Switch to light mode
   icon :
     repo : fontawesome/brands/git-alt
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+
 
 
 nav:
@@ -41,6 +55,7 @@ nav:
       - Luogu :
         - P3225矿场搭建 : OI_related\luoguP3225.md
         - P2680 【NOIP2015提高】运输计划 : OI_related\luoguP2680.md
+        - P2839 middle : OI_related\luoguP2839.md
       - Codeforce :
         - CF400D Dima and Bacteria : OI_related\CF400D_Dima_and_Bacteria.md
         - CF567E President and Roads : OI_related\CF567E_President_and_Roads.md
@@ -84,6 +99,9 @@ extra:
       name: 2018MOTI02
     - icon: fontawesome/solid/paper-plane
       link: mailto:<decalemaxithu@qq.com>
+
+copyright: Copyright &copy; 2023 Mo Tianhao
+
 
 markdown_extensions:
   - admonition

@@ -1,3 +1,10 @@
+---
+hide :
+	- footer
+---
+
+
+
 # Welcome to Decalemaxithu's wiki
 
 
@@ -8,11 +15,11 @@
 
 更新很慢很慢滴
 
-
-
 ## wiki大事祭
 
 2023.1.14 wiki部署在Gthub Pages上，可以正式访问辣
+
+2023.1.15 成功更新完简单数论的史前巨坑，纪念。
 
 
 
