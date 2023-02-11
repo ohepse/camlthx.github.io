@@ -50,15 +50,28 @@ nav:
   - OI相关:
     - 简介 : OI_related\OI.md
     - 题解 :
-      - SLOJ :
-        - P3045食堂 : OI_related\SLOJ_P3045.md
-      - Luogu :
-        - P3225矿场搭建 : OI_related\luoguP3225.md
-        - P2680 【NOIP2015提高】运输计划 : OI_related\luoguP2680.md
-        - P2839 middle : OI_related\luoguP2839.md
-      - Codeforce :
-        - CF400D Dima and Bacteria : OI_related\CF400D_Dima_and_Bacteria.md
-        - CF567E President and Roads : OI_related\CF567E_President_and_Roads.md
+      - SLOJ P2582 层流 : OI_related\SLOJ_P2582.md
+      - SLOJ P2853 Graph : OI_related\SLOJ_P2583.md
+      - SLOJ P2601 路径的交 : OI_related\SLOJ_P2601.md
+      - SLOJ P2604 与或 : OI_related\SLOJ_P2604.md
+      - SLOJ P2623 three : OI_related\SLOJ_P2623.md
+      - SLOJ P3045 食堂 : OI_related\SLOJ_P3045.md
+      - BZOJ 3333 排队计划 : OI_related\bzoj3333.md
+      - BZOJ 4977 跳伞求生 : OI_related\bzoj4977.md
+      - Luogu P1712 [NOI2016]区间 : OI_related\luoguP1712.md
+      - Luogu P2680 [NOIP2015提高]运输计划 : OI_related\luoguP2680.md
+      - Luogu P2839 middle : OI_related\luoguP2839.md
+      - Luogu P2894 [USACO08FEB]Hotel G : OI_related\luoguP2894.md
+      - Luogu P3225 矿场搭建 : OI_related\luoguP3225.md
+      - Luogu P3313 [SDOI2014]旅行 : OI_related\luoguP3313.md
+      - Luogu P3596 [POI2014]KAR-Cards : OI_related\luoguP3569.md
+      - Luogu P3852 [POI2015]Kinoman : OI_related\luoguP3852.md
+      - Luogu P4041 [AHOI2014]奇怪的计算器 : OI_related\luoguP4041.md
+      - Luogu P4180 严格次小生成树 : OI_related\luoguP4180.md
+      - Luogu P4315 月下“毛景树” : OI_related\luoguP4315.md
+      - CF400D Dima and Bacteria : OI_related\CF400D_Dima_and_Bacteria.md
+      - CF567E President and Roads : OI_related\CF567E_President_and_Roads.md
+
       - 测试模拟 :
         - 10.25 CSP-J模拟 : OI_related\10.25_practice.md
         - 10.22 CSP-J模拟 : OI_related\10.22_practice.md
@@ -69,13 +82,22 @@ nav:
     - 学习笔记 :
         - 简单数论 : OI_related/simple_number_theory.md
         - dfs 序 : OI_related/dfs_order.md
+        - 2.6-2.10 数据结构与dp专练 : OI_related/2.6practice.md
     - 杂项 :
         - 警 示 自 己 : OI_related\oi_warning.md
+  - markdown :
+      - markdown简介 : markdown/introdution.md
+      - markdown基本语法 : markdown/basic_grammar.md
   - cubing :
     - 简介 : cubing\Cubing.md
   - 文章 :
       - 西川实验随笔 : compositions\xcsy.md
-  - 关于 : about.md
+  - 杂物堆 :
+      - 相关链接 : link.md
+  - 关于 :
+      - 关于我 : about.md
+      - 更新日记 : upd.md
+
 
 plugins:
   - search:
