@@ -1,10 +1,3 @@
----
-hide :
-	- footer
----
-
-
-
 # Welcome to Decalemaxithu's wiki
 
 
