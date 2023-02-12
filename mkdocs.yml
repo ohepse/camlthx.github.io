@@ -56,9 +56,11 @@ nav:
       - SLOJ P2604 与或 : OI_related/SLOJ_P2604.md
       - SLOJ P2623 three : OI_related/SLOJ_P2623.md
       - SLOJ P3045 食堂 : OI_related/SLOJ_P3045.md
+      - BZOJ 2259 [Oibh] 新型计算机 : OI_related/bzoj2259.md
       - BZOJ 3333 排队计划 : OI_related/bzoj3333.md
       - BZOJ 4977 跳伞求生 : OI_related/bzoj4977.md
       - Luogu P1712 [NOI2016]区间 : OI_related/luoguP1712.md
+      - Luogu P2048 [NOI2010]超级钢琴 : OI_related/luoguP2048.md
       - Luogu P2680 [NOIP2015提高]运输计划 : OI_related/luoguP2680.md
       - Luogu P2839 middle : OI_related/luoguP2839.md
       - Luogu P2894 [USACO08FEB]Hotel G : OI_related/luoguP2894.md
@@ -91,7 +93,7 @@ nav:
   - cubing :
     - 简介 : cubing/Cubing.md
   - 文章 :
-      - 西川实验随笔 : compositions/xcsy.md
+      - 西川实验随笔 : compositions/about_xcsy.md
   - 杂物堆 :
       - 相关链接 : link.md
   - 关于 :
