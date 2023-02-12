@@ -38,6 +38,8 @@
 
 上午还在zk的茶局，跟ljz，nancy他们完了一会，被血虐。下午去tfqz面试。其实那不是我第一次去tfqz，很喜欢那个校园环境，但是教室看起来有点破旧，食堂感觉吃的也不错。考试的时候体育考试还考了一些奇奇怪怪的我从来没没见过的器材，说实话我现在仍然没见过。然后其他的基本上就忘光了。
 
+放一点之前去访校时拍的照片
+
 <img src="D:\wiki-site\my-wiki\camlthx.github.io\docs\compositions\photos\IMG_0910.JPG"  />
 
 <img src="D:\wiki-site\my-wiki\camlthx.github.io\docs\compositions\photos\IMG_0911.JPG" style="zoom:25%;" />
@@ -84,7 +86,7 @@ tfqz的校园也不错
 
 大概是熟悉的自我介绍时间。大部分人印象都不是很深嘛。然后翻到了那年青涩的crz。
 
-<img src="photos\crz.jpg" alt="crz" style="zoom:25%;" />
+<img src="photos/crz.jpg" alt="crz" style="zoom:25%;" />
 
 之后就带着我们逛了逛校园，确实修的很好，但就是不用。
 
