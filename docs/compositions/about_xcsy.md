@@ -40,15 +40,15 @@
 
 放一点之前去访校时拍的照片
 
-<img src="D:\wiki-site\my-wiki\camlthx.github.io\docs\compositions\photos\IMG_0910.JPG"  />
+![image1](photos/IMG_0910.JPG)
 
-<img src="D:\wiki-site\my-wiki\camlthx.github.io\docs\compositions\photos\IMG_0911.JPG" style="zoom:25%;" />
+![image2](photos/IMG_0911.JPG)
 
 tfqz的食堂还是蛮不错的。
 
-<img src="D:\wiki-site\my-wiki\camlthx.github.io\docs\compositions\photos\IMG_0907.JPG" style="zoom:25%;" />
+![campus1](photos/IMG_0907.JPG)
 
-<img src="D:\wiki-site\my-wiki\camlthx.github.io\docs\compositions\photos\IMG_0909.JPG" style="zoom:25%;" />
+![campus2](photos/IMG_0908.JPG)
 
 tfqz的校园也不错
 
@@ -70,7 +70,7 @@ tfqz的校园也不错
 
 7.18的样子去领了录取通知书，还记得是sk来给我写的。
 
-<img src="photos\admisson.jpg" alt="admisson" style="zoom:25%;" />
+![admisson](photos/admisson.jpg)
 
 （不过u1s1后面的录取通知书越来越还看力！)
 
@@ -86,7 +86,7 @@ tfqz的校园也不错
 
 大概是熟悉的自我介绍时间。大部分人印象都不是很深嘛。然后翻到了那年青涩的crz。
 
-<img src="photos/crz.jpg" alt="crz" style="zoom:25%;" />
+![crz](photos/crz.jpg)
 
 之后就带着我们逛了逛校园，确实修的很好，但就是不用。
 
